@@ -21,10 +21,9 @@ Ender 5
 
     -Mainboard: Big Tree Tech Octopus Pro 1.1 connected to RPi via UART
         -TCM2209 Drivers
-        -The config I have attempts to use the default screen that came with it. I 
-         have not gotten it to work properly so far. 
+        -The default Ender-5 screen works now. 
     
 Tevo Tornado
 
-    -Mainboard: SKR mini e3 v1.2
-    -Same belt tensioner on the X axis, but have not found any loss of motion
+    -Mainboard: SKR mini e3 v1.2 connected to RPi via UART
+    -Same belt tensioner on the X axis as my Ender-3, but have not found any loss of motion
