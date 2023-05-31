@@ -24,6 +24,7 @@ Ender 5
         -The default Ender-5 screen works now. 
     
 Tevo Tornado
+
     -Creality Cr-10 clone
     -Mainboard: SKR mini e3 v3.0 connected to Laptop via USB
     -Same belt tensioner on the X axis as my Ender-3, but have not found any loss of motion
