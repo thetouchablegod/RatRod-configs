@@ -7,30 +7,31 @@ and enter:
 
 For Cura
 In start G-code:
-
+```
   START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
+```
 
 In end G-code:
-
+```
   END_PRINT
-
+```
 
 Superslicer
 Start gcode:
-
+```
 M140 S0
 M104 S0
 G92 E0
 START_PRINT EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
-
+```
 End gcode:
-  
+  ```
    END_PRINT
-
+```
 You may have to look up variable names for your particular slicer.
 
 Macro to be put into into mainsail.cfg or a sererate file thats included in Klipper.cfg.
-
+```
   [gcode_macro START_PRINT]
 gcode:
     {% set BED_TEMP = params.BED_TEMP|default(80)|float %}
@@ -66,4 +67,4 @@ gcode:
     G90
     # Disable steppers
     # M84
-
+```
