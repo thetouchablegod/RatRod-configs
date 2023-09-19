@@ -1,4 +1,4 @@
-This is my printer config for Ender-5 running Octopus pro 1.1. No webcam config currently.
+This is my printer config for Ender-5 running Octopus pro 1.1. The webcam is not currently configured.
 
 I run Mainsail on a RasPi communicating via uart. That config is also here. 
 
