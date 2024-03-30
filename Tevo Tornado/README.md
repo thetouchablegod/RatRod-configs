@@ -16,7 +16,7 @@ In end G-code:
   END_PRINT
 ```
 
-Superslicer
+Superslicer based 
 Start gcode:
 ```
 M140 S0
@@ -36,6 +36,8 @@ Macro to be put into into mainsail.cfg or a sererate file thats included in Klip
 gcode:
     {% set BED_TEMP = params.BED_TEMP|default(80)|float %}
     {% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|default(210)|float %}
+    # load default bed mesh
+    BED_MESH_PROFILE LOAD=default
     # Start bed heating
     M140 S{BED_TEMP}
     # Use absolute coordinates
